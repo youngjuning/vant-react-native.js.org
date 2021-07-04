@@ -16,9 +16,9 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.11.0",
-    "husky": "^7.0.0",
     "lerna": "^3.22.1",
-    "lint-staged": "^11.0.0"
+    "lint-staged": "^11.0.0",
+    "yorkie": "^2.0.0"
   },
   "scripts": {
     "commit": "git cz"
@@ -28,16 +28,14 @@
       "path": "cz-customizable"
     }
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
+  "gitHooks": {
+    "commit-msg": "commitlint -e -V",
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "git add"
+      "git add ."
     ]
   }
 }
