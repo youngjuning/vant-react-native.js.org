@@ -3,6 +3,24 @@
   "private": true,
   "workspaces": ["packages/*"],
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "commitizen": "^4.2.4",
+    "commitlint-config-cz": "^0.13.2",
+    "cz-customizable": "^6.3.0",
+    "husky": "^7.0.0",
     "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "commit": "git cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
