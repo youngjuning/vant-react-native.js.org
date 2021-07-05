@@ -8958,10 +8958,10 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-iconfont-cli@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.nlark.com/react-native-iconfont-cli/download/react-native-iconfont-cli-2.2.1.tgz#6c8b8c80d4489603b723c26f79e06b90f2d7bbde"
-  integrity sha1-bIuMgNRIlgO3I8JveeBrkPLXu94=
+react-native-iconfont-cli@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.nlark.com/react-native-iconfont-cli/download/react-native-iconfont-cli-2.2.3.tgz#f1a37bce0f9d341ece84bc08f1f1366c52bd5aed"
+  integrity sha1-8aN7zg+dNB7OhLwI8fE2bFK9Wu0=
   dependencies:
     colors "^1.3.3"
     glob "^7.1.4"

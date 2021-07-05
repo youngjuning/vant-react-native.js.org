@@ -1,0 +1,70 @@
+diff --git a/node_modules/react-native-iconfont-cli/libs/generateComponent.js b/node_modules/react-native-iconfont-cli/libs/generateComponent.js
+index 8887658..ddeae3b 100644
+--- a/node_modules/react-native-iconfont-cli/libs/generateComponent.js
++++ b/node_modules/react-native-iconfont-cli/libs/generateComponent.js
+@@ -117,12 +117,14 @@ exports.generateComponent = function (data, localSvg, config) {
+     iconFile = replace_1.replaceCases(iconFile, cases);
+     iconFile = replace_1.replaceSvgComponents(iconFile, svgComponents);
+     iconFile = replace_1.replaceImports(iconFile, imports);
++    iconFile = replace_1.replaceExports(iconFile, imports);
+     if (config.use_typescript) {
+         iconFile = replace_1.replaceNames(iconFile, names);
+     }
+     else {
+         iconFile = replace_1.replaceNamesArray(iconFile, names);
+         var typeDefinitionFile = getTemplate_1.getTemplate('Icon.d.ts');
++        typeDefinitionFile = replace_1.replaceExports(typeDefinitionFile, imports);
+         typeDefinitionFile = replace_1.replaceNames(typeDefinitionFile, names);
+         fs_1.default.writeFileSync(path_1.default.join(saveDir, 'index.d.ts'), typeDefinitionFile);
+     }
+diff --git a/node_modules/react-native-iconfont-cli/libs/replace.js b/node_modules/react-native-iconfont-cli/libs/replace.js
+index 42c19e8..fdcf993 100644
+--- a/node_modules/react-native-iconfont-cli/libs/replace.js
++++ b/node_modules/react-native-iconfont-cli/libs/replace.js
+@@ -30,6 +30,9 @@ exports.replaceSingleIconContent = function (content, render) {
+ exports.replaceImports = function (content, imports) {
+     return content.replace(/#imports#/g, imports.map(function (item) { return "import " + item + " from './" + item + "';"; }).join('\n'));
+ };
++exports.replaceExports = function (content, exports) {
++    return content.replace(/#exports#/g, exports.map((item) => `export { default as ${item} } from './${item}';`).join('\n'));
++};
+ exports.replaceHelper = function (content) {
+     return content.replace(/#helper#/g, 'import { getIconColor } from \'./helper\';');
+ };
+diff --git a/node_modules/react-native-iconfont-cli/templates/Icon.d.ts.template b/node_modules/react-native-iconfont-cli/templates/Icon.d.ts.template
+index 9344311..a276c31 100644
+--- a/node_modules/react-native-iconfont-cli/templates/Icon.d.ts.template
++++ b/node_modules/react-native-iconfont-cli/templates/Icon.d.ts.template
+@@ -5,6 +5,8 @@ import { FunctionComponent } from 'react';
+ import { ViewProps } from 'react-native';
+ import { GProps } from 'react-native-svg';
+ 
++#exports#
++
+ interface Props extends GProps, ViewProps {
+   name: '#names#';
+   size?: number;
+diff --git a/node_modules/react-native-iconfont-cli/templates/Icon.js.template b/node_modules/react-native-iconfont-cli/templates/Icon.js.template
+index 0ae4a55..1b02662 100644
+--- a/node_modules/react-native-iconfont-cli/templates/Icon.js.template
++++ b/node_modules/react-native-iconfont-cli/templates/Icon.js.template
+@@ -3,6 +3,7 @@
+ import React from 'react';
+ #svgComponents#
+ #imports#
++#exports#
+ 
+ let IconFont = ({ name, ...rest }) => {
+   switch (name) {
+diff --git a/node_modules/react-native-iconfont-cli/templates/Icon.tsx.template b/node_modules/react-native-iconfont-cli/templates/Icon.tsx.template
+index de92cc3..a068bbc 100644
+--- a/node_modules/react-native-iconfont-cli/templates/Icon.tsx.template
++++ b/node_modules/react-native-iconfont-cli/templates/Icon.tsx.template
+@@ -5,6 +5,7 @@ import React, { FunctionComponent } from 'react';
+ import { ViewProps } from 'react-native';
+ #svgComponents#
+ #imports#
++#exports#
+ 
+ export type IconNames = '#names#';
+ 
