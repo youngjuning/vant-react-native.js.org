@@ -1,0 +1,43 @@
+{
+  "name": "@vant-react-native/icons",
+  "version": "0.0.1",
+  "description": "vant icons for react-native",
+  "keywords": [
+    "vant",
+    "react-native",
+    "vant-react-native",
+    "icon"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npx iconfont-rn",
+    "prepublishOnly": "yarn build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngjuning/vant-react-native.git",
+    "directory": "packages/icons"
+  },
+  "author": {
+    "name": "洛竹",
+    "email": "youngjuning@aliyun.com",
+    "url": "https://youngjuning.js.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youngjuning/vant-react-native/issues"
+  },
+  "homepage": "https://github.com/youngjuning/vant-react-native/packages/icons#readme",
+  "devDependencies": {
+    "react-native-iconfont-cli": "2.2.1",
+    "react-native-svg": "^12.1.1"
+  }
+}

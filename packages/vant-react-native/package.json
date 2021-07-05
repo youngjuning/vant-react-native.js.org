@@ -1,0 +1,36 @@
+{
+  "name": "vant-react-native",
+  "version": "0.0.1",
+  "description": "Lightweight React Native UI Components inspired on Vant",
+  "keywords": [
+    "vant",
+    "react-native",
+    "vant-react-native"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngjuning/vant-react-native.git"
+  },
+  "author": {
+    "name": "洛竹",
+    "email": "youngjuning@aliyun.com",
+    "url": "https://youngjuning.js.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youngjuning/vant-react-native/issues"
+  },
+  "homepage": "https://github.com/youngjuning/vant-react-native/packages/vant-react-native#readme",
+  "dependencies": {
+    "@vant-react-native/icons": "^0.0.1"
+  }
+}
