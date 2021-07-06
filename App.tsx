@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, SafeAreaView, ScrollView } from 'react-native';
-import { Icon } from 'vant-react-native';
+import { Icon } from './packages/vant-react-native';
 
 type IconNameType = React.ComponentProps<typeof Icon>['name'];
 

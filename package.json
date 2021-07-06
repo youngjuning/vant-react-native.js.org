@@ -6,12 +6,14 @@
   ],
   "scripts": {
     "commit": "git cz",
-    "postinstall": "npx patch-package",
+    "postinstall": "patch-package && pod-install && jetify",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "bundle:ios": "mkdirp bundle/ios &&react-native bundle --platform ios --entry-file index.js --bundle-output ./bundle/ios/index.ios.jsbundle --assets-dest ./bundle/ios --dev false",
+    "bundle:android":"mkdirp bundle/android && react-native bundle --platform android --entry-file index.js --bundle-output bundle/android/index.android.bundle --assets-dest ./bundle/android --dev false"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -23,7 +25,6 @@
     "@babel/runtime": "^7.12.5",
     "@commitlint/cli": "^12.1.4",
     "@types/jest": "^26.0.23",
-    "@types/react": "^17.0.13",
     "@types/react-native": "^0.64.10",
     "@types/react-test-renderer": "^16.9.2",
     "@youngjuning/eslint-config": "^1.4.0",
@@ -38,10 +39,13 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.11.0",
     "jest": "^26.6.3",
+    "jetifier": "^2.0.0",
     "lerna": "^3.22.1",
     "lint-staged": "^11.0.0",
     "metro-react-native-babel-preset": "^0.64.0",
+    "mkdirp": "^1.0.4",
     "patch-package": "^6.4.7",
+    "pod-install": "^0.1.23",
     "react-test-renderer": "17.0.1",
     "typescript": "^3.8.3",
     "yorkie": "^2.0.0"

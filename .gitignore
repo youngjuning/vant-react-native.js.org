@@ -58,4 +58,6 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
+# build artificial
 lib/
+/bundle/
