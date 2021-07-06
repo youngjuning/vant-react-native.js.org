@@ -9,6 +9,7 @@
     "postinstall": "patch-package && pod-install && jetify",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "predev": "lerna run build --scope @vant-react-native/icons",
     "dev": "lerna run dev --parallel",
     "start": "react-native start",
     "debug": "run-p dev start",
