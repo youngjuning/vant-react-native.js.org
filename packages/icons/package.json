@@ -15,6 +15,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
+    "dev": "onchange -i 'iconfont.json' -- yarn build",
     "build": "npx iconfont-rn",
     "prepublishOnly": "yarn build"
   },
@@ -37,6 +38,7 @@
   },
   "homepage": "https://github.com/youngjuning/vant-react-native/packages/icons#readme",
   "devDependencies": {
+    "onchange": "^7.1.0",
     "react-native-iconfont-cli": "^2.2.3",
     "react-native-svg": "^12.1.1"
   }
