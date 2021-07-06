@@ -19,6 +19,7 @@ export default class App extends Component {
               const paddingLength = data.length % 4 || 4;
               return (
                 <View
+                  key={item}
                   style={{
                     width: '25%',
                     marginBottom: index < data.length - paddingLength ? 40 : 0,
