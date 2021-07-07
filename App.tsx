@@ -16,13 +16,13 @@ export default class App extends Component {
           </Text>
           <View style={{ flexWrap: 'wrap', flexDirection: 'row' }}>
             {data.map((item, index) => {
-              const paddingLength = data.length % 4 || 4;
+              const lastLineLength = data.length % 4 || 4;
               return (
                 <View
                   key={item}
                   style={{
                     width: '25%',
-                    marginBottom: index < data.length - paddingLength ? 40 : 0,
+                    marginBottom: index < data.length - lastLineLength ? 40 : 0,
                     alignItems: 'center',
                   }}
                 >
