@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.9](https://github.com/youngjuning/vant-react-native/compare/vant-react-native@0.4.8...vant-react-native@0.4.9) (2021-07-07)
+
+**Note:** Version bump only for package vant-react-native
+
+
+
+
+
 ## [0.4.8](https://github.com/youngjuning/vant-react-native/compare/vant-react-native@0.4.7...vant-react-native@0.4.8) (2021-07-07)
 
 **Note:** Version bump only for package vant-react-native

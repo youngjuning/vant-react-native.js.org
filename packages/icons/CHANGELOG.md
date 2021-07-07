@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/icons@0.1.0...@vant-react-native/icons@0.2.0) (2021-07-07)
+
+
+### Features
+
+* supprot load icons on deamon ([0f3cc53](https://github.com/youngjuning/vant-react-native/commit/0f3cc533b1da62c42ae9d61ba4a49a1c16a57805))
+
+
+
+
+
 # [0.1.0](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/icons@0.0.9...@vant-react-native/icons@0.1.0) (2021-07-07)
 
 
