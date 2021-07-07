@@ -1,0 +1,39 @@
+{
+  "name": "@vant-react-native/button",
+  "version": "0.0.0",
+  "description": "Vant React Native Button Component",
+  "keywords": [
+    "vant",
+    "react-native",
+    "vant-react-native",
+    "button"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngjuning/vant-react-native.git",
+    "directory": "packages/button"
+  },
+  "author": {
+    "name": "洛竹",
+    "email": "youngjuning@aliyun.com",
+    "url": "https://youngjuning.js.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youngjuning/vant-react-native/issues"
+  },
+  "homepage": "https://github.com/youngjuning/vant-react-native/packages/button#readme"
+}
