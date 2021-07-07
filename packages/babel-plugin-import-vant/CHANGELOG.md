@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/youngjuning/vant-react-native/compare/babel-plugin-import-vant@0.1.4...babel-plugin-import-vant@0.1.5) (2021-07-07)
+
+**Note:** Version bump only for package babel-plugin-import-vant
+
+
+
+
+
 ## [0.1.4](https://github.com/youngjuning/vant-react-native/compare/babel-plugin-import-vant@0.1.3...babel-plugin-import-vant@0.1.4) (2021-07-07)
 
 **Note:** Version bump only for package babel-plugin-import-vant
