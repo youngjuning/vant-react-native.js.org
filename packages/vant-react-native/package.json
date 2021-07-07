@@ -1,6 +1,6 @@
 {
   "name": "vant-react-native",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Lightweight React Native UI Components inspired on Vant",
   "keywords": [
     "vant",
@@ -35,6 +35,6 @@
   "dependencies": {
     "@vant-react-native/button": "^0.0.2",
     "@vant-react-native/icons": "^0.0.4",
-    "babel-plugin-import-vant": "^0.1.1"
+    "babel-plugin-import-vant": "^0.1.2"
   }
 }
