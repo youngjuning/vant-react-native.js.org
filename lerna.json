@@ -5,8 +5,7 @@
   "ignoreChanges": [
     "ignored-file",
     "**/__tests__/**",
-    "**/*.md",
-    "**/tsconfig.json"
+    "**/*.md"
   ],
   "command": {
     "publish": {
