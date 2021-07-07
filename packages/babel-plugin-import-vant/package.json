@@ -34,8 +34,9 @@
   "bugs": {
     "url": "https://github.com/youngjuning/vant-react-native/issues"
   },
-  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/babel-plugin-import-vant",
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/babel-plugin-import-vant#readme",
   "dependencies": {
-    "babel-plugin-import": "^1.13.3"
+    "babel-plugin-import": "^1.13.3",
+    "camelcase": "^6.2.0"
   }
 }

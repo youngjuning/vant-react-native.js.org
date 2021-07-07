@@ -17,7 +17,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "dev": "onchange -i 'iconfont.json' -- yarn build",
     "prebuild": "del-cli lib",
-    "build": "npx iconfont-rn",
+    "build": "iconfont-rn",
     "prepublishOnly": "yarn build"
   },
   "publishConfig": {
