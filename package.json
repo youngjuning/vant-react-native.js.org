@@ -15,7 +15,7 @@
     "debug": "run-p dev start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "bundle:ios": "mkdirp bundle/ios &&react-native bundle --platform ios --entry-file index.js --bundle-output ./bundle/ios/index.ios.jsbundle --assets-dest ./bundle/ios --dev false",
+    "bundle:ios": "mkdirp bundle/ios && react-native bundle --platform ios --entry-file index.js --bundle-output ./bundle/ios/index.ios.jsbundle --assets-dest ./bundle/ios --dev false",
     "bundle:android": "mkdirp bundle/android && react-native bundle --platform android --entry-file index.js --bundle-output bundle/android/index.android.bundle --assets-dest ./bundle/android --dev false"
   },
   "dependencies": {
