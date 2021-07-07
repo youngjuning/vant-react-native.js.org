@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/icons@0.0.9...@vant-react-native/icons@0.1.0) (2021-07-07)
+
+
+### Features
+
+* set default icon size to 20 ([0243b39](https://github.com/youngjuning/vant-react-native/commit/0243b39c46c7103c01f2c25d349db08eb7a408f2))
+
+
+
+
+
 ## [0.0.9](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/icons@0.0.7...@vant-react-native/icons@0.0.9) (2021-07-07)
 
 **Note:** Version bump only for package @vant-react-native/icons
