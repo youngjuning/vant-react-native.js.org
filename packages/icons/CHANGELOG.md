@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.9](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/icons@0.0.7...@vant-react-native/icons@0.0.9) (2021-07-07)
+
+**Note:** Version bump only for package @vant-react-native/icons
+
+
+
+
+
 ## [0.0.7](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/icons@0.0.6...@vant-react-native/icons@0.0.7) (2021-07-07)
 
 **Note:** Version bump only for package @vant-react-native/icons
