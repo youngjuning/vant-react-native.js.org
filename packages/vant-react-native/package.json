@@ -14,6 +14,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "dev": "tsc -w",
+    "prebuild": "del-cli lib",
     "build": "tsc",
     "prepublishOnly": "yarn build"
   },
