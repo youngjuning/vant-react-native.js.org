@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/youngjuning/vant-react-native/compare/vant-react-native@0.1.0...vant-react-native@0.2.0) (2021-07-07)
+
+
+### Features
+
+* support babel-plugin-import ([7445e1d](https://github.com/youngjuning/vant-react-native/commit/7445e1d152734b1f76f80d5c7bd88f98a5dba982))
+
+
+
+
+
 # [0.1.0](https://github.com/youngjuning/vant-react-native/compare/vant-react-native@0.0.3...vant-react-native@0.1.0) (2021-07-07)
 
 
