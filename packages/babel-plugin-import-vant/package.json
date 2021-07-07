@@ -1,11 +1,13 @@
 {
-  "name": "vant-react-native",
-  "version": "0.3.1",
-  "description": "Lightweight React Native UI Components inspired on Vant",
+  "name": "babel-plugin-import-vant",
+  "version": "0.0.0",
+  "description": "Babel plugin for load vant-react-native on demand",
   "keywords": [
     "vant",
     "react-native",
-    "vant-react-native"
+    "vant-react-native",
+    "babel-plugin",
+    "babel-plugin-import"
   ],
   "files": [
     "lib"
@@ -20,7 +22,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/youngjuning/vant-react-native.git"
+    "url": "git+https://github.com/youngjuning/vant-react-native.git",
+    "directory": "packages/babel-plugin-import-vant"
   },
   "author": {
     "name": "洛竹",
@@ -31,10 +34,5 @@
   "bugs": {
     "url": "https://github.com/youngjuning/vant-react-native/issues"
   },
-  "homepage": "https://github.com/youngjuning/vant-react-native/packages/vant-react-native#readme",
-  "dependencies": {
-    "@vant-react-native/button": "^0.0.2",
-    "@vant-react-native/icons": "^0.0.4",
-    "babel-plugin-import-vant": "^0.0.0"
-  }
+  "homepage": "https://github.com/youngjuning/vant-react-native/packages/babel-plugin-import-vant#readme"
 }
