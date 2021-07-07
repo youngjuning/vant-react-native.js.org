@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/youngjuning/vant-react-native/compare/vant-react-native@0.2.0...vant-react-native@0.3.0) (2021-07-07)
+
+
+### Features
+
+* add babelPluginImportVant function ([ad4c77f](https://github.com/youngjuning/vant-react-native/commit/ad4c77f6223f8333e4cc335d6f32fb504036e8c3))
+
+
+
+
+
 # [0.2.0](https://github.com/youngjuning/vant-react-native/compare/vant-react-native@0.1.0...vant-react-native@0.2.0) (2021-07-07)
 
 
