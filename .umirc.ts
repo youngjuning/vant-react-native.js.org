@@ -1,5 +1,8 @@
 import { defineConfig, IConfig } from 'dumi';
 
+const isProd =
+  process.env.NODE_ENV === 'production';
+
 export default defineConfig({
   title: 'vant-react-native',
   mode: 'site',
@@ -8,5 +11,14 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'packages/button', 'packages/icons'],
   },
+  base: isProd ? '/vant-react-native': '/',
+  publicPath: isProd ? '/vant-react-native/': '/',
+  navs: [
+    null,
+    {
+      title: 'GitHub',
+      path: 'https://github.com/youngjuning/vant-react-native',
+    },
+  ]
   // more config: https://d.umijs.org/config
 } as IConfig);
