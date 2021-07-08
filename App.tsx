@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
 import IconList from './pages/IconList';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <SafeAreaView>
@@ -13,3 +13,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default App;

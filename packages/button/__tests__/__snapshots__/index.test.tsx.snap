@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component renders correctly 1`] = `
+<View>
+  <Text
+    style={
+      Object {
+        "color": "#007fff",
+        "fontSize": 20,
+      }
+    }
+  >
+     WIP: Button Component.
+  </Text>
+</View>
+`;

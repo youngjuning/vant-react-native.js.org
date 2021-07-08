@@ -9942,10 +9942,9 @@ react-native-iconfont-cli@^2.2.3:
     mkdirp "^0.5.1"
     tslib "^1.10.0"
 
-react-native-mock-render@^0.1.9:
+"react-native-mock-render@git+https://github.com/mrdulin/react-native-mock-render.git#art":
   version "0.1.9"
-  resolved "https://registry.npm.taobao.org/react-native-mock-render/download/react-native-mock-render-0.1.9.tgz#a51937848db21ec5aea85d290c2a7ebedf00af93"
-  integrity sha1-pRk3hI2yHsWuqF0pDCp+vt8Ar5M=
+  resolved "git+https://github.com/mrdulin/react-native-mock-render.git#be09ae2af37ef256663854a371932784d202da58"
   dependencies:
     create-react-class "^15.6.2"
     cubic-bezier "^0.1.2"
