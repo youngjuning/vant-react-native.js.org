@@ -7,6 +7,7 @@ group:
   title: Icon
   path: /icon
   order: 2
+toc: menu
 ---
 
 # `@vant-react-native/icons`

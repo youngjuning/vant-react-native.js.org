@@ -2,6 +2,7 @@
 nav:
   title: Getting Started
   order: 1
+toc: menu
 ---
 
 # Getting Started
