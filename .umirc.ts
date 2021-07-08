@@ -1,7 +1,7 @@
 import { defineConfig, IConfig } from 'dumi';
 
 const isProd =
-  process.env.NODE_ENV === 'production';
+  process.env.NODE_ENV === 'production' && process.env.PREVIEW_PR !== "true";
 
 export default defineConfig({
   title: 'vant-react-native',
