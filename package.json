@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "start:dumi": "dumi dev",
-    "build:dumi": "dumi build",
+    "build:dumi": "lerna run build && dumi build",
     "commit": "git cz",
     "postinstall": "patch-package && pod-install && jetify",
     "android": "react-native run-android",
