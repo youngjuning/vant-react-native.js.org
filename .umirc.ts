@@ -1,5 +1,8 @@
 import { defineConfig, IConfig } from 'dumi';
 
+const isProd =
+  process.env.NODE_ENV === 'production' && process.env.IS_VERCEL != 'yes';
+
 export default defineConfig({
   title: 'vant-react-native',
   mode: 'site',
@@ -8,6 +11,8 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'packages/button', 'packages/icons'],
   },
+  base: isProd ? '/vant-react-native': '/',
+  publicPath: isProd ? '/vant-react-native/': '/',
   navs: [
     null,
     {
