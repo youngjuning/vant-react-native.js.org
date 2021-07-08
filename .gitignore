@@ -62,3 +62,9 @@ buck-out/
 lib/
 /bundle/
 coverage/
+
+# umi
+.umi
+.umi-production
+.env.local
+dist/

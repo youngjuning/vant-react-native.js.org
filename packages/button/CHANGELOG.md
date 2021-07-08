@@ -1,3 +1,14 @@
+---
+title: Button's Changelog
+nav:
+  title: Components
+  path: /components
+group:
+  title: Button
+  path: /button
+  order: 2
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
-import IconList from './pages/IconList';
+import IconList from './.demo/IconList';
 
 class App extends Component {
   render() {

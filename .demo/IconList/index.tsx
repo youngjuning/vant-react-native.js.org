@@ -9,11 +9,6 @@ export default class IconList extends Component {
     return (
       <SafeAreaView>
         <ScrollView>
-          <Text
-            style={{ textAlign: 'center', paddingVertical: 20, fontSize: 25, color: '#007fff' }}
-          >
-            vant-react-native
-          </Text>
           <View style={{ flexWrap: 'wrap', flexDirection: 'row' }}>
             {data.map((item, index) => {
               const paddingLength = data.length % 4 || 4;
@@ -26,8 +21,8 @@ export default class IconList extends Component {
                     alignItems: 'center',
                   }}
                 >
-                  <Icon name={item} size={40} />
-                  <Text style={{ color: '#646566', marginTop: 10 }}>{item}</Text>
+                  <Icon name={item} size={18}/>
+                  <Text style={{ color: '#646566', marginTop: 10,fontSize:10 }}>{item}</Text>
                 </View>
               );
             })}
