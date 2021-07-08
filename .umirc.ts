@@ -12,7 +12,7 @@ export default defineConfig({
     includes: ['docs', 'packages/button', 'packages/icons'],
   },
   base: isProd ? '/vant-react-native': '/',
-  publicPath: isProd ? '/vant-react-native/': '/',
+  publicPath: isProd ? 'https://cdn.jsdelivr.net/gh/youngjuning/vant-react-native@gh-pages/': '/',
   navs: [
     null,
     {
