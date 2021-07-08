@@ -14,7 +14,7 @@ toc: menu
 
 vant icons for react-native
 
-## Install
+## 安装
 
 ```sh
 $ yarn add @vant-react-native/icons
@@ -22,6 +22,6 @@ $ yarn add @vant-react-native/icons
 $ npm install @vant-react-native/icons
 ```
 
-## Usage
+## 示例
 
 <code src="../../.demo/IconList/index.tsx" hideActions='["CSB"]'></code>
