@@ -1,7 +1,7 @@
 import { defineConfig, IConfig } from 'dumi';
 
 const isProd =
-  process.env.NODE_ENV === 'production' && process.env.IS_VERCEL != 'yes';
+  process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   title: 'vant-react-native',
