@@ -15,4 +15,4 @@ $ yarn add vant-react-native
 
 ## 示例
 
-<code src="../.demo/IconList/index.tsx" hideActions='["CSB"]'></code>
+<code src="../example/IconList/index.tsx" hideActions='["CSB"]'></code>
