@@ -21,8 +21,8 @@ export default class IconList extends Component {
                     alignItems: 'center',
                   }}
                 >
-                  <Icon name={item} size={18}/>
-                  <Text style={{ color: '#646566', marginTop: 10,fontSize:10 }}>{item}</Text>
+                  <Icon name={item} size={18} />
+                  <Text style={{ color: '#646566', marginTop: 10, fontSize: 10 }}>{item}</Text>
                 </View>
               );
             })}
