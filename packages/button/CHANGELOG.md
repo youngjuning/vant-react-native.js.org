@@ -7,6 +7,7 @@ group:
   title: Button
   path: /button
   order: 2
+hide: true
 ---
 
 # Change Log

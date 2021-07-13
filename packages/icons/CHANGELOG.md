@@ -7,6 +7,7 @@ group:
   title: Icon
   path: /icon
   order: 2
+hide: true
 ---
 
 # Change Log
