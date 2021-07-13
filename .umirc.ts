@@ -8,9 +8,6 @@ export default defineConfig({
   mode: 'site',
   logo: 'https://img01.yzcdn.cn/vant/logo.png',
   favicon: 'https://img01.yzcdn.cn/vant/logo.png',
-  resolve: {
-    includes: ['docs', 'packages/button', 'packages/icons'],
-  },
   base: isProd ? '/vant-react-native': '/',
   publicPath: isProd ? 'https://cdn.jsdelivr.net/gh/youngjuning/vant-react-native@gh-pages/': '/',
   exportStatic: {},

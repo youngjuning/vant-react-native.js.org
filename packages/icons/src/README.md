@@ -1,5 +1,5 @@
 ---
-title: Icon 图标
+title: Icon
 nav:
   title: Components
   path: /components
@@ -14,7 +14,7 @@ toc: menu
 
 vant icons for react-native
 
-## 安装
+## Install
 
 ```sh
 $ yarn add @vant-react-native/icons
@@ -22,6 +22,6 @@ $ yarn add @vant-react-native/icons
 $ npm install @vant-react-native/icons
 ```
 
-## 示例
+## Usage
 
-<code src="../../example/IconList/index.tsx" hideActions='["CSB"]'></code>
+<code src="../../../example/IconList/index.tsx" hideActions='["CSB"]'></code>

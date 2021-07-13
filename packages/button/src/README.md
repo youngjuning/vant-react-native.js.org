@@ -1,7 +1,7 @@
 ---
-title: Button 按钮
+title: Button
 nav:
-  title: 组件
+  title: Components
   path: /components
 group:
   title: Button
