@@ -1,0 +1,35 @@
+{
+  "name": "@vant-react-native/scripts",
+  "version": "0.2.0",
+  "description": "scripts for vant-react-native",
+  "keywords": [
+    "vant-react-native",
+    "scripts"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "prebuild": "del-cli lib",
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngjuning/vant-react-native.git",
+    "directory": "packages/scripts"
+  },
+  "author": {
+    "name": "洛竹",
+    "email": "youngjuning@aliyun.com",
+    "url": "https://youngjuning.js.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youngjuning/vant-react-native/issues"
+  },
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/scripts#readme"
+}
