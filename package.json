@@ -60,7 +60,7 @@
     "mkdirp": "^1.0.4",
     "npm-run-all": "^4.1.5",
     "patch-package": "^6.4.7",
-    "pod-install": "^0.1.23",
+    "pod-install": "^0.1.24",
     "react-native-mock-render": "git+https://github.com/mrdulin/react-native-mock-render.git#art",
     "react-test-renderer": "17.0.1",
     "typescript": "^3.8.3",
