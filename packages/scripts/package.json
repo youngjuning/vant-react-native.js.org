@@ -11,6 +11,9 @@
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "bin": {
+    "vant": "./bin/cli.js"
+  },
   "scripts": {
     "dev": "tsc -w",
     "prebuild": "del-cli lib",
@@ -31,5 +34,9 @@
   "bugs": {
     "url": "https://github.com/youngjuning/vant-react-native/issues"
   },
-  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/scripts#readme"
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/scripts#readme",
+  "dependencies": {
+    "commander": "^8.0.0",
+    "handlebars-template-compiler": "^1.1.0"
+  }
 }
