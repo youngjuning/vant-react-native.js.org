@@ -1,7 +1,7 @@
 {
-  "name": "@vant-react-native/scripts",
-  "version": "0.2.0",
-  "description": "scripts for vant-react-native",
+  "name": "{{packageName}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
   "keywords": [
     "vant-react-native",
     "scripts"

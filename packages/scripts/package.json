@@ -15,7 +15,7 @@
     "vant": "./bin/cli.js"
   },
   "scripts": {
-    "dev": "tsc -w",
+    "dev": "yarn build -w",
     "prebuild": "del-cli lib",
     "build": "tsc",
     "prepublishOnly": "yarn build"
@@ -37,6 +37,11 @@
   "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/scripts#readme",
   "dependencies": {
     "commander": "^8.0.0",
-    "handlebars-template-compiler": "^1.1.0"
+    "handlebars-template-compiler": "^1.1.0",
+    "inquire": "^0.4.8"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^7.3.3",
+    "fs-extra": "^10.0.0"
   }
 }

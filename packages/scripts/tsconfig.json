@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "lib",
     "module": "commonjs",
-    "target": "ES5"
+    "target": "ES5",
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"]
 }
