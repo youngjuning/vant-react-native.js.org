@@ -1,20 +1,9 @@
-# @vant-react-native/scripts
+# {{packageName}}
 
 ## Install
 
-```sh
-$ yarn add babel-plugin-import-vant -D
-```
+TODO: Add Install Method
 
 ## Usage
 
-Just a function that return a config now. Please config `babel.config.js` like:
-
-```diff
-module.exports = {
-  ...
-  plugins: [
-+    ...require('babel-plugin-import-vant').default()
-  ],
-};
-```
+TODO: Add Usage Demo
