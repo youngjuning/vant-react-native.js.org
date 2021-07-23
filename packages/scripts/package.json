@@ -1,6 +1,6 @@
 {
   "name": "@vant-react-native/scripts",
-  "version": "0.2.0",
+  "version": "0.0.0",
   "private": true,
   "description": "scripts for vant-react-native",
   "keywords": [
@@ -43,11 +43,13 @@
     "fs-extra": "^10.0.0",
     "handlebars-template-compiler": "^1.1.0",
     "inquire": "^0.4.8",
+    "ora": "^5.4.1",
     "tmp-promise": "^3.0.2"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.12",
     "@types/inquirer": "^7.3.3",
+    "@types/ora": "^3.2.0",
     "fs-extra": "^10.0.0"
   }
 }
