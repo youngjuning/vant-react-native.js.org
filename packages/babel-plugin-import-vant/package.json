@@ -15,9 +15,9 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "dev": "tsc -w",
-    "prebuild": "del-cli lib",
+    "prebuild": "rimraf lib",
     "build": "tsc",
+    "dev": "yarn build -w",
     "prepublishOnly": "yarn build"
   },
   "repository": {

@@ -15,6 +15,12 @@ program
         name: 'packageName',
         default: name,
       },
+      {
+        type: 'input',
+        message: 'package version',
+        name: 'version',
+        default: '0.0.0',
+      },
     ]);
     console.log(answer);
 

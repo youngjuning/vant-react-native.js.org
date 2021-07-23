@@ -40,7 +40,6 @@
     "commitlint-config-cz": "^0.13.2",
     "core-js": "^3.15.2",
     "cz-customizable": "^6.3.0",
-    "del-cli": "^4.0.0",
     "dumi": "^1.1.23",
     "dumi-theme-mobile": "^1.1.6",
     "enzyme": "^3.11.0",
@@ -63,6 +62,7 @@
     "pod-install": "^0.1.24",
     "react-native-mock-render": "git+https://github.com/mrdulin/react-native-mock-render.git#art",
     "react-test-renderer": "17.0.1",
+    "rimraf": "^3.0.2",
     "typescript": "^3.8.3",
     "umi-plugin-react-native": "^0.5.0",
     "yorkie": "^2.0.0"
