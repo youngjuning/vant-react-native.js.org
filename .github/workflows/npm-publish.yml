@@ -1,0 +1,23 @@
+name: npm-publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  npm-publish:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'chore(release):')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install Packages
+        run: yarn install --registry=https://registry.npmjs.org/
+      - name: Authenticate with Registry
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish package
+        run: lerna publish from-git --yes
