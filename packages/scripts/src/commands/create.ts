@@ -6,6 +6,7 @@ import execa from 'execa';
 import tmp from 'tmp-promise';
 import fs from 'fs-extra';
 import path from 'path';
+import ora from 'ora';
 import htc from 'handlebars-template-compiler';
 
 interface IMeta {
@@ -73,7 +74,8 @@ program
   .description('Create a new vant-react-native package')
   .action(async (name, loc) => {
     const answer: IMeta = await inquirer.prompt(getQuestions(name));
-
+    const spinner = ora(chalk.blackBright(`Creating ${name}`));
+    spinner.start();
     const tmpdir = await tmp.dir({ unsafeCleanup: true });
     fs.copySync(path.join(__dirname, '../../template'), tmpdir.path);
 
@@ -91,5 +93,6 @@ program
 
     fs.copySync(tmpdir.path, `${process.cwd()}/packages/${locPath}`);
 
-    tmpdir.cleanup();
+    await tmpdir.cleanup();
+    spinner.succeed(chalk.greenBright(`The ${name} has been generated at packages/${locPath}`));
   });
