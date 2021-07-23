@@ -1,0 +1,55 @@
+{
+  "name": "@vant-react-native/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "description": "scripts for vant-react-native",
+  "keywords": [
+    "vant-react-native",
+    "scripts"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "vant": "./bin/cli.js"
+  },
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "dev": "yarn build -w",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngjuning/vant-react-native.git",
+    "directory": "packages/scripts"
+  },
+  "author": {
+    "name": "洛竹",
+    "email": "youngjuning@aliyun.com",
+    "url": "https://youngjuning.js.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youngjuning/vant-react-native/issues"
+  },
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/scripts#readme",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^8.0.0",
+    "execa": "^5.1.1",
+    "fs-extra": "^10.0.0",
+    "handlebars-template-compiler": "^1.1.0",
+    "inquire": "^0.4.8",
+    "ora": "^5.4.1",
+    "tmp-promise": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.12",
+    "@types/inquirer": "^7.3.3",
+    "@types/ora": "^3.2.0",
+    "fs-extra": "^10.0.0"
+  }
+}
