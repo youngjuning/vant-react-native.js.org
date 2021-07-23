@@ -20,4 +20,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish package
-        run: lerna publish from-git --yes
+        run: lerna publish from-package --yes

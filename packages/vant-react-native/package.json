@@ -1,6 +1,6 @@
 {
   "name": "vant-react-native",
-  "version": "0.4.10",
+  "version": "0.5.0",
   "description": "Lightweight React Native UI Components inspired on Vant",
   "keywords": [
     "vant",
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/vant-react-native#readme",
   "dependencies": {
-    "@vant-react-native/button": "^0.0.8",
-    "@vant-react-native/icons": "^0.2.1"
+    "@vant-react-native/button": "^0.1.0",
+    "@vant-react-native/icons": "^0.3.0"
   }
 }
