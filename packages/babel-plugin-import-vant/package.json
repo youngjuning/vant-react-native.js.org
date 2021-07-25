@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-import-vant",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Babel plugin for load vant-react-native on demand",
   "keywords": [
     "vant",
