@@ -21,3 +21,11 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish package
         run: lerna publish from-package --yes
+      - name: Create commit comment
+        uses: peter-evans/commit-comment@v1
+        with:
+          body: |
+            This commit has been publish to NPM successfully.
+            > Created by [commit-comment][1]
+
+            [1]: https://github.com/peter-evans/commit-comment
