@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
+import { themes } from '@vant-react-native/themes';
+
+console.log('defaultTheme', themes);
 
 export default class Button extends Component {
   render() {

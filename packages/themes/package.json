@@ -1,11 +1,10 @@
 {
-  "name": "vant-react-native",
-  "version": "0.5.2",
-  "description": "Lightweight React Native UI Components inspired on Vant",
+  "name": "@vant-react-native/themes",
+  "version": "0.0.0",
+  "description": "themes library for vant-react-native",
   "keywords": [
-    "vant",
-    "react-native",
-    "vant-react-native"
+    "vant-react-native",
+    "scripts"
   ],
   "files": [
     "lib"
@@ -20,7 +19,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/youngjuning/vant-react-native.git"
+    "url": "git+https://github.com/youngjuning/vant-react-native.git",
+    "directory": "packages/themes"
   },
   "author": {
     "name": "洛竹",
@@ -31,10 +31,8 @@
   "bugs": {
     "url": "https://github.com/youngjuning/vant-react-native/issues"
   },
-  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/vant-react-native#readme",
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/themes#readme",
   "dependencies": {
-    "@vant-react-native/button": "^0.1.2",
-    "@vant-react-native/icons": "^0.3.2",
-    "@vant-react-native/themes": "^0.0.0"
+    "theming": "^3.3.0"
   }
 }

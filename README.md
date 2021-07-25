@@ -79,3 +79,12 @@ const data: IconNameType[] = [
   'passed',
 ];
 ```
+
+## Debug
+
+```sh
+# 构建所有包
+$ yarn build
+# 调试要开发的包
+$ yarn workspace @vant-react-natives/button run dev
+```

@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/youngjuning/vant-react-native/issues"
   },
-  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/button#readme"
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/button#readme",
+  "dependencies": {
+    "@vant-react-native/themes": "^0.0.0"
+  }
 }
