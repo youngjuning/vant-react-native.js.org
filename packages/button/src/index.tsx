@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Text, View, TouchableHighlight, TouchableHighlightProps } from 'react-native';
-import { useTheme, Theme } from '@vant-react-native/theme';
-import getButtonStyle from './style';
+import { useStyle } from './style';
 
 interface ButtonProps extends TouchableHighlightProps {
   children: React.ReactNode;
@@ -9,14 +8,20 @@ interface ButtonProps extends TouchableHighlightProps {
 }
 
 const Button: FunctionComponent<ButtonProps> = props => {
-  const theme = useTheme<Theme>();
-  const styles = getButtonStyle(theme, props.type);
+  const styles = useStyle(props);
+  const { style, ...restProps } = props;
   return (
-    <TouchableHighlight {...props}>
-      <View style={styles.container}>
-        <Text style={styles.textStyle}>{props.children}</Text>
-      </View>
-    </TouchableHighlight>
+    <View style={[styles.wrapper, style]}>
+      <TouchableHighlight {...restProps}>
+        <View style={styles.container}>
+          {typeof props.children === 'string' ? (
+            <Text style={styles.textStyle}>{props.children}</Text>
+          ) : (
+            props.children
+          )}
+        </View>
+      </TouchableHighlight>
+    </View>
   );
 };
 

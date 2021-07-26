@@ -1,9 +1,10 @@
 import { StyleSheet } from 'react-native';
-import { Theme } from '@vant-react-native/theme';
+import { Theme, useTheme } from '@vant-react-native/theme';
 
-const getButtonStyle = (theme: Theme, type: string) => {
+export const useStyle = props => {
+  const theme = useTheme<Theme>();
   const getBackgroundColor = () => {
-    switch (type) {
+    switch (props.type) {
       case 'primary':
         return theme['success-color'];
       case 'info':
@@ -20,15 +21,16 @@ const getButtonStyle = (theme: Theme, type: string) => {
     container: {
       alignItems: 'center',
       backgroundColor: getBackgroundColor(),
-      borderColor: getBackgroundColor(),
-      borderWidth: 1,
-      justifyContent: 'center',
       padding: 15,
     },
     textStyle: {
-      color: type === 'default' ? theme.black : theme.white,
+      color: props.type === 'default' ? theme.black : theme.white,
+    },
+    wrapper: {
+      borderColor: props.type === 'default' ? theme['gray-3'] : getBackgroundColor(),
+      borderRadius: 2,
+      borderWidth: 1,
     },
   });
   return styles;
 };
-export default getButtonStyle;

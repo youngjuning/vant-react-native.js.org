@@ -1,5 +1,6 @@
+/* eslint-disable no-alert */
 import React, { Component } from 'react';
-import { ScrollView, StyleSheet, Alert, Text } from 'react-native';
+import { ScrollView, StyleSheet, Text } from 'react-native';
 import { Button } from 'vant-react-native';
 
 export default class ButtonDemo extends Component {
@@ -11,7 +12,7 @@ export default class ButtonDemo extends Component {
           style={styles.button}
           type="default"
           onPress={() => {
-            Alert.alert('默认按钮');
+            alert('默认按钮');
           }}
         >
           默认按钮
@@ -20,7 +21,7 @@ export default class ButtonDemo extends Component {
           style={styles.button}
           type="primary"
           onPress={() => {
-            Alert.alert('主要按钮');
+            alert('主要按钮');
           }}
         >
           主要按钮
@@ -29,7 +30,7 @@ export default class ButtonDemo extends Component {
           style={styles.button}
           type="info"
           onPress={() => {
-            Alert.alert('信息按钮');
+            alert('信息按钮');
           }}
         >
           信息按钮
@@ -38,7 +39,7 @@ export default class ButtonDemo extends Component {
           style={styles.button}
           type="warning"
           onPress={() => {
-            Alert.alert('警告按钮');
+            alert('警告按钮');
           }}
         >
           警告按钮
@@ -47,7 +48,7 @@ export default class ButtonDemo extends Component {
           style={styles.button}
           type="danger"
           onPress={() => {
-            Alert.alert('危险按钮');
+            alert('危险按钮');
           }}
         >
           危险按钮
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   textStyle: {
-    color: 'white',
+    color: '#d3d3d3',
     fontSize: 16,
     marginBottom: 10,
   },
