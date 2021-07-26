@@ -1,6 +1,6 @@
 {
   "name": "@vant-react-native/button",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Vant React Native Button Component",
   "keywords": [
     "vant",
@@ -38,6 +38,6 @@
   },
   "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/button#readme",
   "dependencies": {
-    "@vant-react-native/theme": "^0.0.0"
+    "@vant-react-native/theme": "^0.1.0"
   }
 }
