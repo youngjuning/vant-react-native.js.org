@@ -53,6 +53,28 @@ export default class ButtonDemo extends Component {
         >
           危险按钮
         </Button>
+        <Text style={styles.textStyle}>朴素按钮</Text>
+        <Button style={styles.button} type="primary" plain>
+          朴素按钮
+        </Button>
+        <Button style={styles.button} type="info" plain>
+          朴素按钮
+        </Button>
+        <Text style={styles.textStyle}>细边框</Text>
+        <Button style={styles.button} type="primary" plain hairline>
+          细边框按钮
+        </Button>
+        <Button style={styles.button} type="info" plain hairline>
+          细边框按钮
+        </Button>
+
+        <Text style={styles.textStyle}>禁用状态</Text>
+        <Button style={styles.button} type="primary" disabled>
+          禁用状态
+        </Button>
+        <Button style={styles.button} type="info" disabled>
+          禁用状态
+        </Button>
       </ScrollView>
     );
   }
@@ -63,11 +85,11 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   container: {
-    paddingHorizontal: 15,
+    paddingHorizontal: 10,
   },
   textStyle: {
     color: '#d3d3d3',
     fontSize: 16,
-    marginBottom: 10,
+    marginVertical: 10,
   },
 });

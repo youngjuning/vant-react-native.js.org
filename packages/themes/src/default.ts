@@ -1,3 +1,4 @@
+import { StyleSheet } from 'react-native';
 // Color Palette
 // 色彩, NOTE: must use `#000000` instead of `#000`
 // https://facebook.github.io/react-native/docs/colors.html
@@ -92,6 +93,7 @@ export const animation = {
 export const border = {
   'border-color': colors['gray-3'],
   'border-width-base': 1,
+  'border-width-hairline': StyleSheet.hairlineWidth,
   'border-radius-sm': 2,
   'border-radius-md': 4,
   'border-radius-lg': 8,
@@ -107,4 +109,5 @@ export default {
   ...padding,
   ...font,
   ...animation,
+  ...border,
 };

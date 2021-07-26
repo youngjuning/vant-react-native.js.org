@@ -1,4 +1,11 @@
 export interface Theme {
+  'border-color': string;
+  'border-width-base': number;
+  'border-width-hairline': number;
+  'border-radius-sm': number;
+  'border-radius-md': number;
+  'border-radius-lg': number;
+  'border-radius-max': number;
   'animation-duration-base': string;
   'animation-duration-fast': string;
   'animation-timing-function-enter': string;
