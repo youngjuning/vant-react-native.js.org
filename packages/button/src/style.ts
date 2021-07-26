@@ -33,6 +33,9 @@ export const useStyle = (props: ButtonProps) => {
     if (props.plain) {
       return theme.white;
     }
+    if (props.color) {
+      return props.color;
+    }
     switch (props.type) {
       case 'primary':
         return theme['success-color'];
@@ -49,6 +52,9 @@ export const useStyle = (props: ButtonProps) => {
 
   const getTextColor = () => {
     if (props.plain) {
+      if (props.color) {
+        return props.color;
+      }
       switch (props.type) {
         case 'primary':
           return theme['success-color'];
@@ -61,6 +67,8 @@ export const useStyle = (props: ButtonProps) => {
         default:
           return theme['gray-3'];
       }
+    } else if (props.color) {
+      return theme.white;
     } else if (props.type === 'default') {
       return theme.black;
     } else {
@@ -69,6 +77,9 @@ export const useStyle = (props: ButtonProps) => {
   };
 
   const getBorderColor = () => {
+    if (props.color) {
+      return props.color;
+    }
     switch (props.type) {
       case 'primary':
         return theme['success-color'];

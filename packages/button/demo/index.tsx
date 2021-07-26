@@ -102,6 +102,13 @@ export default class ButtonDemo extends Component {
             迷你按钮
           </Button>
         </View>
+        <Text style={styles.textStyle}>自定义颜色</Text>
+        <Button style={styles.button} color="#7232dd">
+          单色按钮
+        </Button>
+        <Button style={styles.button} color="#7232dd" plain>
+          单色按钮
+        </Button>
       </ScrollView>
     );
   }

@@ -18,6 +18,7 @@ interface ButtonProps extends TouchableHighlightProps {
   loadingText?: string;
   square?: boolean;
   round?: boolean;
+  color?: string;
   size?: 'large' | 'normal' | 'small' | 'mini';
 }
 
@@ -59,6 +60,7 @@ Button.defaultProps = {
   square: false,
   round: false,
   size: 'normal',
+  color: '',
 };
 Button.displayName = 'Button';
 
