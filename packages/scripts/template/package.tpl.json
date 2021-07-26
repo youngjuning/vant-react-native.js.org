@@ -17,6 +17,9 @@
     "dev": "yarn build -w",
     "prepublishOnly": "yarn build"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/youngjuning/vant-react-native.git",
