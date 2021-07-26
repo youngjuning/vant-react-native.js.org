@@ -1,37 +1,51 @@
 import React, { FunctionComponent } from 'react';
 import {
-  Text,
   View,
+  Text,
   TouchableHighlight,
   TouchableHighlightProps,
   ActivityIndicator,
 } from 'react-native';
-import { useStyle } from './style';
+import { useStyle, useIndicatorColor } from './style';
 
 interface ButtonProps extends TouchableHighlightProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   type?: 'default' | 'primary' | 'info' | 'warning' | 'danger';
   plain?: boolean;
   hairline?: boolean;
   disabled?: boolean;
+  loading?: boolean;
+  loadingText?: string;
+  square?: boolean;
+  round?: boolean;
 }
 
 const Button: FunctionComponent<ButtonProps> = props => {
   const styles = useStyle(props);
+  const indicatorColor = useIndicatorColor(props);
   const { style, ...restProps } = props;
+
   return (
-    <View style={[styles.wrapper, style]}>
-      <TouchableHighlight {...restProps}>
-        <View style={styles.contentWrapper}>
-          <ActivityIndicator size="small" color="#00ff00" style={styles.indicator} />
-          {typeof props.children === 'string' ? (
-            <Text style={styles.textStyle}>{props.children}</Text>
-          ) : (
-            props.children
-          )}
-        </View>
-      </TouchableHighlight>
-    </View>
+    <TouchableHighlight style={[styles.wrapper, style]} {...restProps}>
+      <View style={styles.container}>
+        {props.loading ? (
+          <>
+            <ActivityIndicator
+              size="small"
+              animating
+              color={indicatorColor}
+              style={styles.indicator}
+            />
+            {props.loadingText ? <Text style={styles.textStyle}>{props.loadingText}</Text> : null}
+          </>
+        ) : null}
+        {typeof props.children === 'string' ? (
+          <Text style={styles.textStyle}>{props.children}</Text>
+        ) : (
+          props.children
+        )}
+      </View>
+    </TouchableHighlight>
   );
 };
 
@@ -40,6 +54,9 @@ Button.defaultProps = {
   plain: false,
   hairline: false,
   disabled: false,
+  loading: false,
+  square: false,
+  round: false,
 };
 Button.displayName = 'Button';
 
