@@ -35,6 +35,6 @@
   "dependencies": {
     "@vant-react-native/button": "^0.1.2",
     "@vant-react-native/icons": "^0.3.2",
-    "@vant-react-native/themes": "^0.0.0"
+    "@vant-react-native/theme": "^0.0.0"
   }
 }

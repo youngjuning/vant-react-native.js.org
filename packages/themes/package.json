@@ -1,7 +1,7 @@
 {
-  "name": "@vant-react-native/themes",
+  "name": "@vant-react-native/theme",
   "version": "0.0.0",
-  "description": "themes library for vant-react-native",
+  "description": "theme library for vant-react-native",
   "keywords": [
     "vant-react-native",
     "scripts"
@@ -20,7 +20,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/youngjuning/vant-react-native.git",
-    "directory": "packages/themes"
+    "directory": "packages/theme"
   },
   "author": {
     "name": "洛竹",
@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/youngjuning/vant-react-native/issues"
   },
-  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/themes#readme",
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/theme#readme",
   "dependencies": {
     "theming": "^3.3.0"
   }

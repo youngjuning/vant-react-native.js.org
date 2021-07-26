@@ -38,6 +38,6 @@
   },
   "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/button#readme",
   "dependencies": {
-    "@vant-react-native/themes": "^0.0.0"
+    "@vant-react-native/theme": "^0.0.0"
   }
 }

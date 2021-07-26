@@ -1,4 +1,4 @@
-# @vant-react-native/themes
+# @vant-react-native/theme
 
 ## Install
 

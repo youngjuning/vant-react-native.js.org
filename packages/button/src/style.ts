@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Theme } from '@vant-react-native/themes';
+import { Theme } from '@vant-react-native/theme';
 
 const getButtonStyle = (theme: Theme, type: string) => {
   const getBackgroundColor = () => {

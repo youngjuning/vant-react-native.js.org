@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Text, View, TouchableHighlight, TouchableHighlightProps } from 'react-native';
-import { useTheme, Theme } from '@vant-react-native/themes';
+import { useTheme, Theme } from '@vant-react-native/theme';
 import getButtonStyle from './style';
 
 interface ButtonProps extends TouchableHighlightProps {
