@@ -12,7 +12,3 @@ toc: menu
 ```sh
 $ yarn add vant-react-native
 ```
-
-## Demo
-
-<code src="../example/IconList/index.tsx" hideActions='["CSB"]'></code>

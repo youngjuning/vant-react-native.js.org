@@ -24,4 +24,4 @@ $ npm install @vant-react-native/icons
 
 ## 示例
 
-<code src="../../../example/IconList/index.tsx" hideActions='["CSB"]'></code>
+<code src="../demo/index.tsx" hideActions='["CSB"]'></code>

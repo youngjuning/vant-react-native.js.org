@@ -1,12 +1,10 @@
 {
-  "name": "@vant-react-native/button",
-  "version": "0.1.2",
-  "description": "Vant React Native Button Component",
+  "name": "@vant-react-native/theme",
+  "version": "0.0.0",
+  "description": "theme library for vant-react-native",
   "keywords": [
-    "vant",
-    "react-native",
     "vant-react-native",
-    "button"
+    "scripts"
   ],
   "files": [
     "lib"
@@ -19,13 +17,10 @@
     "dev": "yarn build -w",
     "prepublishOnly": "yarn build"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/youngjuning/vant-react-native.git",
-    "directory": "packages/button"
+    "directory": "packages/theme"
   },
   "author": {
     "name": "洛竹",
@@ -36,8 +31,8 @@
   "bugs": {
     "url": "https://github.com/youngjuning/vant-react-native/issues"
   },
-  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/button#readme",
+  "homepage": "https://github.com/youngjuning/vant-react-native/tree/main/packages/theme#readme",
   "dependencies": {
-    "@vant-react-native/theme": "^0.0.0"
+    "theming": "^3.3.0"
   }
 }
