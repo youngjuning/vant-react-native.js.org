@@ -13,7 +13,7 @@ export default defineConfig({
   exportStatic: {},
   hash: true,
   scripts: ['https://s9.cnzz.com/z_stat.php?id=1280093214&web_id=1280093214'],
-  styles: ['a[title=站长统计] { display: none; }'],
+  styles: ['a[title=站长统计] { display: none; }', `.markdown table th {word-break: unset;}`, `.markdown table td {word-break: break-word;}`],
   metas: [
     {
       name: 'keywords',
@@ -29,7 +29,7 @@ export default defineConfig({
     {
       title: 'GitHub',
       path: 'https://github.com/youngjuning/vant-react-native',
-    },
+    }
   ]
   // more config: https://d.umijs.org/config
 } as IConfig);

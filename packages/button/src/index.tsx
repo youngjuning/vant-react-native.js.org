@@ -10,15 +10,50 @@ import { useStyle, useIndicatorColor } from './style';
 
 interface ButtonProps extends TouchableHighlightProps {
   children?: React.ReactNode;
+  /**
+   * @description       Can be set to primary、info、warning、danger
+   * @description.zh-CN 类型，可选值为 primary、info、warning、danger
+   */
   type?: 'default' | 'primary' | 'info' | 'warning' | 'danger';
+  /**
+   * @description       Whether to be plain button
+   * @description.zh-CN 是否为朴素按钮
+   */
   plain?: boolean;
+  /**
+   * @description       Whether to be hairline button
+   * @description.zh-CN 是否使用细边框
+   */
   hairline?: boolean;
-  disabled?: boolean;
+  /**
+   * @description       Whether show loading status
+   * @description.zh-CN 是否显示为加载状态
+   */
   loading?: boolean;
+  /**
+   * @description       Loading text
+   * @description.zh-CN 加载状态提示文字
+   */
   loadingText?: string;
+  /**
+   * @description       Whether to be square button
+   * @description.zh-CN 是否为方形按钮
+   */
   square?: boolean;
+  /**
+   * @description       Whether to be round button
+   * @description.zh-CN 是否为圆形按钮
+   */
   round?: boolean;
+  /**
+   * @description       Custom Color
+   * @description.zh-CN 按钮颜色
+   */
   color?: string;
+  /**
+   * @description       Can be set to large、small、mini
+   * @description.zh-CN 尺寸，可选值为
+   */
   size?: 'large' | 'normal' | 'small' | 'mini';
 }
 
@@ -55,7 +90,6 @@ Button.defaultProps = {
   type: 'default',
   plain: false,
   hairline: false,
-  disabled: false,
   loading: false,
   square: false,
   round: false,
