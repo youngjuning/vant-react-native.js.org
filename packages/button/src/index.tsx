@@ -1,15 +1,28 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-import { themes } from '@vant-react-native/themes';
+import React, { FunctionComponent } from 'react';
+import { Text, View, TouchableHighlight, TouchableHighlightProps } from 'react-native';
+import { useTheme, Theme } from '@vant-react-native/themes';
+import getButtonStyle from './style';
 
-console.log('defaultTheme', themes);
-
-export default class Button extends Component {
-  render() {
-    return (
-      <View>
-        <Text style={{ fontSize: 20, color: '#007fff' }}> WIP: Button Component.</Text>
-      </View>
-    );
-  }
+interface ButtonProps extends TouchableHighlightProps {
+  children: React.ReactNode;
+  type?: 'default' | 'primary' | 'info' | 'warning' | 'danger';
 }
+
+const Button: FunctionComponent<ButtonProps> = props => {
+  const theme = useTheme<Theme>();
+  const styles = getButtonStyle(theme, props.type);
+  return (
+    <TouchableHighlight {...props}>
+      <View style={styles.container}>
+        <Text style={styles.textStyle}>{props.children}</Text>
+      </View>
+    </TouchableHighlight>
+  );
+};
+
+Button.defaultProps = {
+  type: 'default',
+};
+Button.displayName = 'Button';
+
+export default Button;

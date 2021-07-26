@@ -3,10 +3,11 @@
 // https://facebook.github.io/react-native/docs/colors.html
 // 8-digit-hex to 4-digit hex https://css-tricks.com/8-digit-hex-codes/
 // https://www.chromestatus.com/feature/5685348285808640 chrome will support `#RGBA`s
+
 /**
  * Base Colors
  */
-export const colors = {
+const colors = {
   black: '#000000',
   white: '#ffffff',
   'gray-1': '#f7f8fa',
@@ -28,7 +29,7 @@ export const colors = {
 /**
  * TODO: Gradient Colors
  */
-export const gradientColors = {
+const gradientColors = {
   'gradient-red': '',
   'gradient-orange': '',
 };
@@ -36,7 +37,7 @@ export const gradientColors = {
 /**
  * Component Colors
  */
-export const componentColors = {
+const componentColors = {
   'primary-color': colors.blue,
   'success-color': colors.green,
   'danger-color': colors.red,
@@ -54,7 +55,7 @@ const paddingBase = 4;
 /**
  * Padding
  */
-export const padding = {
+const padding = {
   'padding-base': paddingBase,
   'padding-xs': paddingBase * 2,
   'padding-sm': paddingBase * 3,
@@ -66,7 +67,7 @@ export const padding = {
 /**
  * Font
  */
-export const font = {
+const font = {
   'font-size-xs': 10,
   'font-size-sm': 12,
   'font-size-md': 14,
