@@ -1,6 +1,6 @@
 /* eslint-disable no-alert */
 import React, { Component } from 'react';
-import { ScrollView, StyleSheet, Text } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Button } from 'vant-react-native';
 
 export default class ButtonDemo extends Component {
@@ -48,7 +48,7 @@ export default class ButtonDemo extends Component {
         <Button style={styles.button} type="primary" disabled>
           禁用状态
         </Button>
-        <Button style={styles.button} type="info" disabled>
+        <Button style={styles.button} type="info" plain disabled>
           禁用状态
         </Button>
 
@@ -70,6 +70,38 @@ export default class ButtonDemo extends Component {
         <Button style={styles.button} type="info" square>
           方形按钮
         </Button>
+        <Text style={styles.textStyle}>按钮尺寸</Text>
+        <View
+          style={{ justifyContent: 'space-around', flexDirection: 'row', alignItems: 'center' }}
+        >
+          <Button
+            style={styles.button}
+            size="large"
+            type="primary"
+            onPress={() => alert('大号按钮')}
+          >
+            大号按钮
+          </Button>
+          <Button style={styles.button} type="primary" onPress={() => alert('普通按钮')}>
+            普通按钮
+          </Button>
+          <Button
+            style={styles.button}
+            type="primary"
+            size="small"
+            onPress={() => alert('大号按钮')}
+          >
+            小号按钮
+          </Button>
+          <Button
+            style={styles.button}
+            type="primary"
+            size="mini"
+            onPress={() => alert('迷你按钮')}
+          >
+            迷你按钮
+          </Button>
+        </View>
       </ScrollView>
     );
   }

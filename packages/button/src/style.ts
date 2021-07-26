@@ -93,6 +93,41 @@ export const useStyle = (props: ButtonProps) => {
     return theme['border-radius-sm'];
   };
 
+  const getSizeHeight = () => {
+    switch (props.size) {
+      case 'large':
+        return 50;
+      case 'small':
+        return 32;
+      case 'mini':
+        return 24;
+      default:
+        return 44;
+    }
+  };
+  const getSizePadding = () => {
+    switch (props.size) {
+      case 'small':
+        return 8;
+      case 'mini':
+        return 4;
+      default:
+        return 15;
+    }
+  };
+  const getSizeFontSize = () => {
+    switch (props.size) {
+      case 'large':
+        return 16;
+      case 'small':
+        return 12;
+      case 'mini':
+        return 10;
+      default:
+        return 14;
+    }
+  };
+
   const styles = StyleSheet.create({
     container: {
       alignItems: 'center',
@@ -101,18 +136,21 @@ export const useStyle = (props: ButtonProps) => {
       borderRadius: getBorderRadius(),
       borderWidth: props.hairline ? theme['border-width-hairline'] : theme['border-width-base'],
       flexDirection: 'row',
+      flex: 1,
       justifyContent: 'center',
       opacity: props.disabled ? 0.5 : 1,
-      padding: 15,
+      paddingHorizontal: getSizePadding(),
     },
     indicator: {
       marginRight: theme['padding-xs'],
     },
     textStyle: {
       color: getTextColor(),
+      fontSize: getSizeFontSize(),
     },
     wrapper: {
       borderRadius: getBorderRadius(),
+      height: getSizeHeight(),
     },
   });
   return styles;

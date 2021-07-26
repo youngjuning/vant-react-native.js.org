@@ -18,6 +18,7 @@ interface ButtonProps extends TouchableHighlightProps {
   loadingText?: string;
   square?: boolean;
   round?: boolean;
+  size?: 'large' | 'normal' | 'small' | 'mini';
 }
 
 const Button: FunctionComponent<ButtonProps> = props => {
@@ -57,6 +58,7 @@ Button.defaultProps = {
   loading: false,
   square: false,
   round: false,
+  size: 'normal',
 };
 Button.displayName = 'Button';
 
