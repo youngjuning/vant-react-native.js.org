@@ -5,6 +5,7 @@ import {
   TouchableHighlight,
   TouchableHighlightProps,
   ActivityIndicator,
+  GestureResponderEvent,
 } from 'react-native';
 import { useStyle, useIndicatorColor } from './style';
 
@@ -55,6 +56,16 @@ interface ButtonProps extends TouchableHighlightProps {
    * @description.zh-CN 尺寸，可选值为
    */
   size?: 'large' | 'normal' | 'small' | 'mini';
+  /**
+   * @description        Double press event
+   * @description.zh-CN 双击事件，200 毫秒内按压两次被触发，间隔时间可通过 onDoublePress 自定义
+   */
+  onDoublePress?: (event: GestureResponderEvent) => void;
+  /**
+   * @description        The time interval (in milliseconds) between when onPress is triggered and when onDoublePress is called.
+   * @description.zh-CN 从 onPress 触发到 onDoublePress 被调用的时间间隔（毫秒）。
+   */
+  delayDoublePress?: number;
 }
 
 const Button: FunctionComponent<ButtonProps> = props => {
@@ -62,8 +73,32 @@ const Button: FunctionComponent<ButtonProps> = props => {
   const indicatorColor = useIndicatorColor(props);
   const { style, ...restProps } = props;
 
+  let lastTime = 0;
+  let clickCount = 1;
+  let timeout = null;
+  const _onPress = (event: GestureResponderEvent) => {
+    const now = Date.now();
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+    timeout = setTimeout(() => {
+      props.onPress(event);
+      clickCount = 1;
+      lastTime = 0;
+    }, props.delayDoublePress);
+    if (clickCount === 2 && now - lastTime <= props.delayDoublePress) {
+      clearTimeout(timeout);
+      clickCount = 1;
+      lastTime = 0;
+      props.onDoublePress(event);
+    } else {
+      clickCount++;
+      lastTime = now;
+    }
+  };
+
   return (
-    <TouchableHighlight style={[styles.wrapper, style]} {...restProps}>
+    <TouchableHighlight style={[styles.wrapper, style]} {...restProps} onPress={_onPress}>
       <View style={styles.container}>
         {props.loading ? (
           <>
@@ -95,6 +130,8 @@ Button.defaultProps = {
   round: false,
   size: 'normal',
   color: '',
+  onDoublePress: () => {},
+  delayDoublePress: 200,
 };
 Button.displayName = 'Button';
 

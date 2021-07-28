@@ -109,6 +109,20 @@ export default class ButtonDemo extends Component {
         <Button style={styles.button} color="#7232dd" plain>
           单色按钮
         </Button>
+        <Text style={styles.textStyle}>双击事件</Text>
+        <Button
+          style={styles.button}
+          type="primary"
+          delayDoublePress={200}
+          onPress={() => {
+            alert('单击事件');
+          }}
+          onDoublePress={() => {
+            alert('双击事件');
+          }}
+        >
+          双击事件
+        </Button>
       </ScrollView>
     );
   }
