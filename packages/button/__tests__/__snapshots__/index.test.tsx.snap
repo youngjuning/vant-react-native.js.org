@@ -1,16 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Component renders correctly 1`] = `
-<View>
-  <Text
+<ForwardRef
+  color=""
+  delayDoublePress={200}
+  hairline={false}
+  loading={false}
+  onDoublePress={[Function]}
+  onPress={[Function]}
+  plain={false}
+  round={false}
+  size="normal"
+  square={false}
+  style={
+    Array [
+      Object {
+        "borderRadius": 2,
+        "height": 44,
+      },
+      undefined,
+    ]
+  }
+  type="default"
+>
+  <View
     style={
       Object {
-        "color": "#007fff",
-        "fontSize": 20,
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderColor": "#ebedf0",
+        "borderRadius": 2,
+        "borderWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 15,
       }
     }
-  >
-     WIP: Button Component.
-  </Text>
-</View>
+  />
+</ForwardRef>
 `;
