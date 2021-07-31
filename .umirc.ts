@@ -29,6 +29,9 @@ export default defineConfig({
       title: 'GitHub',
       path: 'https://github.com/youngjuning/vant-react-native',
     }
-  ]
+  ],
+  resolve: {
+    includes: ['docs', 'packages/button', 'packages/icons'],
+  }
   // more config: https://d.umijs.org/config
 } as IConfig);

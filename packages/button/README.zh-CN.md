@@ -24,6 +24,6 @@ $ npm install @vant-react-native/button
 
 ## 示例
 
-<code src="../demo/index.tsx" hideActions='["CSB"]'></code>
+<code src="./demo/index.tsx" hideActions='["CSB"]'></code>
 
-<API src="./index.tsx"></API>
+<API src="./src/index.tsx"></API>

@@ -1,7 +1,7 @@
 ---
 title: Icon 图标
 nav:
-  title: Components
+  title: 组件
   path: /components
 group:
   title: Icon 图标
@@ -24,4 +24,4 @@ $ npm install @vant-react-native/icons
 
 ## 示例
 
-<code src="../demo/index.tsx" hideActions='["CSB"]'></code>
+<code src="./demo/index.tsx" hideActions='["CSB"]'></code>
