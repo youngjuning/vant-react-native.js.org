@@ -82,9 +82,17 @@ export default class ButtonDemo extends Component {
           >
             大号按钮
           </Button>
+        </View>
+        <View
+          style={{ justifyContent: 'space-around', flexDirection: 'row', alignItems: 'center' }}
+        >
           <Button style={styles.button} type="primary" onPress={() => alert('普通按钮')}>
             普通按钮
           </Button>
+        </View>
+        <View
+          style={{ justifyContent: 'space-around', flexDirection: 'row', alignItems: 'center' }}
+        >
           <Button
             style={styles.button}
             type="primary"
@@ -93,6 +101,10 @@ export default class ButtonDemo extends Component {
           >
             小号按钮
           </Button>
+        </View>
+        <View
+          style={{ justifyContent: 'space-around', flexDirection: 'row', alignItems: 'center' }}
+        >
           <Button
             style={styles.button}
             type="primary"
