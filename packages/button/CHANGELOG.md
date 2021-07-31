@@ -1,11 +1,18 @@
----
-hide: true
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [0.3.0](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/button@0.2.0...@vant-react-native/button@0.3.0) (2021-07-31)
+
+
+### Features
+
+* add onDoublePress event ([69067cc](https://github.com/youngjuning/vant-react-native/commit/69067cc4c4f3c908b3f3964fd6f008b997ab5109))
+
+
+
+
 
 # [0.2.0](https://github.com/youngjuning/vant-react-native/compare/@vant-react-native/button@0.1.2...@vant-react-native/button@0.2.0) (2021-07-26)
 
