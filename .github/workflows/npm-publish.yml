@@ -26,7 +26,7 @@ jobs:
         uses: peter-evans/commit-comment@v1
         with:
           body: |
-            Hello Dear @youngjuning. This commit has been publish to NPM successfully.
+            Hello Dear @youngjuning. This commit was published successfully.
             > Created by [commit-comment][1]
 
             [1]: https://github.com/peter-evans/commit-comment
@@ -35,7 +35,7 @@ jobs:
         uses: peter-evans/commit-comment@v1
         with:
           body: |
-            Hello Dear @youngjuning. This commit has been publish to NPM unsuccessfully.
+            Hello Dear @youngjuning. This commit failed to publish.
             > Created by [commit-comment][1]
 
             [1]: https://github.com/peter-evans/commit-comment
